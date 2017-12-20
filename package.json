@@ -1,0 +1,24 @@
+{
+  "name": "zoinedapi",
+  "version": "0.0.1",
+  "description": "Handles posting data to zoined api, with validation",
+  "main": "app.js",
+  "scripts": {
+    "test": "nyc --reporter=lcov --report-dir=public/coverage  mocha"
+  },
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "3.0.0-2",
+    "nyc": "^11.4.1"
+  },
+  "keywords": [
+    "Zoined"
+  ],
+  "author": "Dave Grix",
+  "license": "MIT"
+}
