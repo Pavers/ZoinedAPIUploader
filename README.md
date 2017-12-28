@@ -20,7 +20,6 @@ npm install --save zoined_api
 ```
 <!--/@-->
 
-
 ## Usage
 
 ```sh
@@ -35,33 +34,35 @@ zoinedAPI.dataPost(JSON.stringify(myData), 'dataType')
     .catch(error => {
     ...
     });
-
 ```
 
 ## Available dataTypes
-* sales 
-* suppliers
-* campaigns
-* campaignproducts
-* departments
-* budgets
-* products
-* customers
-* organisations
-* salesperson
-* currencyrates
-* inventorysnapshots
-* inventorytransactions
-* flathierarchies
-* producthierachies
-* rebatecodes
-* salesorders
-* salessummary
-* visitors
+
+- sales 
+- suppliers
+- campaigns
+- campaignproducts
+- departments
+- budgets
+- products
+- customers
+- organisations
+- salesperson
+- currencyrates
+- inventorysnapshots
+- inventorytransactions
+- flathierarchies
+- producthierachies
+- rebatecodes
+- salesorders
+- salessummary
+- visitors
+- visitordemographics
+- idmapping
 
 ## Example Success Response
 
-```sh 
+```sh
 {
   "status": "OK",
   "msg": "1 entity added"
@@ -77,7 +78,6 @@ zoinedAPI.dataPost(JSON.stringify(myData), 'dataType')
     "errorReason":"Missing Required Property"
 }
 ```
-
 
 <!--@dependencies({shield:false})-->
 ## <a name="dependencies">Dependencies</a>
@@ -101,5 +101,5 @@ zoinedAPI.dataPost(JSON.stringify(myData), 'dataType')
 <!--@license()-->
 ## License
 
-[MIT](./LICENSE) © Dave Grix
+[MIT](./LICENSE) © Dave Grix - Pavers LTD
 <!--/@-->

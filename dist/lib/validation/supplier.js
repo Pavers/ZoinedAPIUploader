@@ -1,4 +1,4 @@
-/* eslint-disable valid-jsdoc */
+/* eslint-disable valid-jsdoc,no-else-return */
 'use strict';
 
 /**
@@ -39,14 +39,14 @@ var validateSupplier = function () {
                   result.errorID = '';
                   result.errorField = 'supplier_id';
                   result.errorReason = 'Missing Required Property';
-                  reject(result);
+                  return reject(result);
                 } else {
 
                   if (typeof row.supplier_id !== 'string') {
                     result.errorID = '';
                     result.errorField = 'supplier_id';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 }
 
@@ -54,14 +54,14 @@ var validateSupplier = function () {
                   result.errorID = row.supplier_id;
                   result.errorField = 'supplier_name';
                   result.errorReason = 'Missing Required Property';
-                  reject(result);
+                  return reject(result);
                 } else {
 
                   if (typeof row.supplier_name !== 'string') {
                     result.errorID = row.supplier_id;
                     result.errorField = 'supplier_name';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 }
 
@@ -70,7 +70,7 @@ var validateSupplier = function () {
                     result.errorID = row.supplier_id;
                     result.errorField = 'supplier_email';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 } else {
                   row.supplier_email = '';
@@ -81,7 +81,7 @@ var validateSupplier = function () {
                     result.errorID = row.supplier_id;
                     result.errorField = 'supplier_phone';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 } else {
                   row.supplier_phone = '';
@@ -92,7 +92,7 @@ var validateSupplier = function () {
                     result.errorID = row.supplier_id;
                     result.errorField = 'supplier_address';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 } else {
                   row.supplier_address = '';
@@ -103,7 +103,7 @@ var validateSupplier = function () {
                     result.errorID = row.supplier_id;
                     result.errorField = 'supplier_city';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 } else {
                   row.supplier_city = '';
@@ -114,7 +114,7 @@ var validateSupplier = function () {
                     result.errorID = row.supplier_id;
                     result.errorField = 'supplier_zipcode';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 } else {
                   row.supplier_zipcode = '';
@@ -125,7 +125,7 @@ var validateSupplier = function () {
                     result.errorID = row.supplier_id;
                     result.errorField = 'supplier_country';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 } else {
                   row.supplier_country = '';
@@ -136,13 +136,14 @@ var validateSupplier = function () {
                     result.errorID = row.supplier_id;
                     result.errorField = 'source_system';
                     result.errorReason = 'Not a String';
-                    reject(result);
+                    return reject(result);
                   }
                 } else {
                   row.source_system = '';
                 }
+
                 finalObject.push(row);
-                resolve(row);
+                return resolve(row);
               });
             });
             _context.next = 6;

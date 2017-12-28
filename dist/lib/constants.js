@@ -19,7 +19,9 @@ module.exports = Object.freeze({
   REBATECODES: 'rebatecodes',
   SALESORDERS: 'salesorders',
   SALESSUMMARY: 'salessummary',
-  VISITORS: 'visitors'
+  VISITORS: 'visitors',
+  VISTORDEMOGRAPHICS: 'visitordemographics',
+  IDMAPPING: 'idmapping'
 
 });
 //# sourceMappingURL=constants.js.map

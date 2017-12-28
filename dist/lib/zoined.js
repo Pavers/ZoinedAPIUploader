@@ -25,6 +25,8 @@ var rebateCodesValidation = require('./validation/rebatecodes');
 var salesOrdersValidation = require('./validation/salesorders');
 var salesSummaryValidation = require('./validation/salessummary');
 var visitorValidation = require('./validation/visitors');
+var visitorDemographicValidation = require('./validation/visitordemographics');
+var idMapping = require('./validation/idmapping');
 var zoinedPost = require('./doPost');
 
 exports.init = function (apiKey) {
@@ -63,7 +65,7 @@ exports.dataPost = function () {
         switch (_context2.prev = _context2.next) {
           case 0:
             _context2.t0 = postType;
-            _context2.next = _context2.t0 === constants.SUPPLIERS ? 3 : _context2.t0 === constants.SALES ? 6 : _context2.t0 === constants.CAMPAIGN ? 9 : _context2.t0 === constants.CAMPAIGNPRODUCTS ? 12 : _context2.t0 === constants.DEPARTMENTS ? 15 : _context2.t0 === constants.BUDGETS ? 18 : _context2.t0 === constants.PRODUCTS ? 21 : _context2.t0 === constants.CUSTOMERS ? 24 : _context2.t0 === constants.ORGANISATIONS ? 27 : _context2.t0 === constants.SALESPERSON ? 30 : _context2.t0 === constants.CURRENCYRATES ? 33 : _context2.t0 === constants.INVENTORYSNAPSHOTS ? 36 : _context2.t0 === constants.INVENTORYTRANSACTIONS ? 39 : _context2.t0 === constants.FLATHIERACHIES ? 42 : _context2.t0 === constants.PRODUCTHIERACHIES ? 45 : _context2.t0 === constants.REBATECODES ? 48 : _context2.t0 === constants.SALESORDERS ? 51 : _context2.t0 === constants.SALESSUMMARY ? 54 : _context2.t0 === constants.VISITORS ? 57 : 60;
+            _context2.next = _context2.t0 === constants.SUPPLIERS ? 3 : _context2.t0 === constants.SALES ? 6 : _context2.t0 === constants.CAMPAIGN ? 9 : _context2.t0 === constants.CAMPAIGNPRODUCTS ? 12 : _context2.t0 === constants.DEPARTMENTS ? 15 : _context2.t0 === constants.BUDGETS ? 18 : _context2.t0 === constants.PRODUCTS ? 21 : _context2.t0 === constants.CUSTOMERS ? 24 : _context2.t0 === constants.ORGANISATIONS ? 27 : _context2.t0 === constants.SALESPERSON ? 30 : _context2.t0 === constants.CURRENCYRATES ? 33 : _context2.t0 === constants.INVENTORYSNAPSHOTS ? 36 : _context2.t0 === constants.INVENTORYTRANSACTIONS ? 39 : _context2.t0 === constants.FLATHIERACHIES ? 42 : _context2.t0 === constants.PRODUCTHIERACHIES ? 45 : _context2.t0 === constants.REBATECODES ? 48 : _context2.t0 === constants.SALESORDERS ? 51 : _context2.t0 === constants.SALESSUMMARY ? 54 : _context2.t0 === constants.VISITORS ? 57 : _context2.t0 === constants.VISTORDEMOGRAPHICS ? 60 : _context2.t0 === constants.IDMAPPING ? 63 : 66;
             break;
 
           case 3:
@@ -71,7 +73,9 @@ exports.dataPost = function () {
             return supplierValidation.validateSupplier(postData).then(function (returnData) {
               return sendData(constants.SUPPLIERS, returnData);
             }).catch(function (errorData) {
-              return errorData;
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 5:
@@ -81,6 +85,10 @@ exports.dataPost = function () {
             _context2.next = 8;
             return salesValidation.validateSalesTransactions(postData).then(function (returnData) {
               return sendData(constants.SALES, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 8:
@@ -90,6 +98,10 @@ exports.dataPost = function () {
             _context2.next = 11;
             return campaignValidation.validateCampaign(postData).then(function (returnData) {
               return sendData(constants.CAMPAIGN, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 11:
@@ -99,6 +111,10 @@ exports.dataPost = function () {
             _context2.next = 14;
             return campaignProductValidation.validateCampaignProducts(postData).then(function (returnData) {
               return sendData(constants.CAMPAIGNPRODUCTS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 14:
@@ -108,6 +124,10 @@ exports.dataPost = function () {
             _context2.next = 17;
             return departmentValidation.validateDepartment(postData).then(function (returnData) {
               return sendData(constants.DEPARTMENTS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 17:
@@ -117,6 +137,10 @@ exports.dataPost = function () {
             _context2.next = 20;
             return budgetValidation.validateBudgets(postData).then(function (returnData) {
               return sendData(constants.BUDGETS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 20:
@@ -126,6 +150,10 @@ exports.dataPost = function () {
             _context2.next = 23;
             return productValidation.validateProducts(postData).then(function (returnData) {
               return sendData(constants.PRODUCTS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 23:
@@ -135,6 +163,10 @@ exports.dataPost = function () {
             _context2.next = 26;
             return customerValidation.validateCustomers(postData).then(function (returnData) {
               return sendData(constants.CUSTOMERS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 26:
@@ -144,6 +176,10 @@ exports.dataPost = function () {
             _context2.next = 29;
             return organisationValidation.validateOrganisations(postData).then(function (returnData) {
               return sendData(constants.ORGANISATIONS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 29:
@@ -153,6 +189,10 @@ exports.dataPost = function () {
             _context2.next = 32;
             return salesPersonsValidation.validateSalesPerson(postData).then(function (returnData) {
               return sendData(constants.SALESPERSON, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 32:
@@ -162,6 +202,10 @@ exports.dataPost = function () {
             _context2.next = 35;
             return currencyRateValidation.currencyValidation(postData).then(function (returnData) {
               return sendData(constants.CURRENCYRATES, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 35:
@@ -171,6 +215,10 @@ exports.dataPost = function () {
             _context2.next = 38;
             return inventorySnapshotsValidation.validateInventorySnapshots(postData).then(function (returnData) {
               return sendData(constants.INVENTORYSNAPSHOTS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 38:
@@ -180,6 +228,10 @@ exports.dataPost = function () {
             _context2.next = 41;
             return inventoryTransactionsValidation.validateInventoryTransactions(postData).then(function (returnData) {
               return sendData(constants.INVENTORYTRANSACTIONS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 41:
@@ -189,6 +241,10 @@ exports.dataPost = function () {
             _context2.next = 44;
             return flatHierachiesValidation.validateFlatHierarchies(postData).then(function (returnData) {
               return sendData(constants.FLATHIERACHIES, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 44:
@@ -198,6 +254,10 @@ exports.dataPost = function () {
             _context2.next = 47;
             return productHierachiesValidation.validateProductHierachies(postData).then(function (returnData) {
               return sendData(constants.PRODUCTHIERACHIES, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 47:
@@ -207,6 +267,10 @@ exports.dataPost = function () {
             _context2.next = 50;
             return rebateCodesValidation.validateRebateCodes(postData).then(function (returnData) {
               return sendData(constants.REBATECODES, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 50:
@@ -216,6 +280,10 @@ exports.dataPost = function () {
             _context2.next = 53;
             return salesOrdersValidation.validateSalesOrders(postData).then(function (returnData) {
               return sendData(constants.SALESORDERS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 53:
@@ -225,6 +293,10 @@ exports.dataPost = function () {
             _context2.next = 56;
             return salesSummaryValidation.validateSalesSummary(postData).then(function (returnData) {
               return sendData(constants.SALESSUMMARY, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 56:
@@ -234,12 +306,42 @@ exports.dataPost = function () {
             _context2.next = 59;
             return visitorValidation.validateVisitors(postData).then(function (returnData) {
               return sendData(constants.VISITORS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
             });
 
           case 59:
             return _context2.abrupt('return', _context2.sent);
 
           case 60:
+            _context2.next = 62;
+            return visitorDemographicValidation.validateVisitorDemographics(postData).then(function (returnData) {
+              return sendData(constants.VISTORDEMOGRAPHICS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
+            });
+
+          case 62:
+            return _context2.abrupt('return', _context2.sent);
+
+          case 63:
+            _context2.next = 65;
+            return idMapping.validateIDMapping(postData).then(function (returnData) {
+              return sendData(constants.VISTORDEMOGRAPHICS, returnData);
+            }).catch(function (errorData) {
+              return new Promise(function (resolve, reject) {
+                reject(errorData);
+              });
+            });
+
+          case 65:
+            return _context2.abrupt('return', _context2.sent);
+
+          case 66:
           case 'end':
             return _context2.stop();
         }

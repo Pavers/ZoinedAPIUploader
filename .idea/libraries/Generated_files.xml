@@ -12,6 +12,7 @@
         <item url="file://$PROJECT_DIR$/dist/lib/validation/departments.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/flathierarchies.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/helper.js" />
+        <item url="file://$PROJECT_DIR$/dist/lib/validation/idmapping.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/inventorysnapshots.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/inventorytransactions.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/organisations.js" />
@@ -23,6 +24,7 @@
         <item url="file://$PROJECT_DIR$/dist/lib/validation/salessummary.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/salestransactions.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/supplier.js" />
+        <item url="file://$PROJECT_DIR$/dist/lib/validation/visitordemographics.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/visitors.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/zoined.js" />
         <item url="file://$PROJECT_DIR$/dist/test/allTests.js" />
@@ -39,6 +41,7 @@
       <root url="file://$PROJECT_DIR$/dist/lib/validation/departments.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/flathierarchies.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/helper.js" />
+      <root url="file://$PROJECT_DIR$/dist/lib/validation/idmapping.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/inventorysnapshots.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/inventorytransactions.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/organisations.js" />
@@ -50,6 +53,7 @@
       <root url="file://$PROJECT_DIR$/dist/lib/validation/salessummary.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/salestransactions.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/supplier.js" />
+      <root url="file://$PROJECT_DIR$/dist/lib/validation/visitordemographics.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/visitors.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/zoined.js" />
       <root url="file://$PROJECT_DIR$/dist/test/allTests.js" />

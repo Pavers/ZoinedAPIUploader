@@ -1,6 +1,6 @@
 {
   "name": "zoined_api",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Handles posting data to zoined api, with validation",
   "main": "app.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "keywords": [
     "Zoined"
   ],
-  "author": "Dave Grix",
+  "author": "Dave Grix - Pavers LTD",
   "license": "MIT",
   "repository": {
     "type": "git",
