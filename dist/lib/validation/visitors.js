@@ -109,6 +109,7 @@ var validateVisitors = function () {
                     result.errorID = row.organisation_id;
                     result.errorField = 'time';
                     result.errorReason = 'Not in correct format of hh:mm:ss';
+                    result.givenValue = row.time;
                     reject(result);
                   }
                 }
