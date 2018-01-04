@@ -100,7 +100,7 @@ var validateInventorySnapshots = function () {
                   }
                 }
 
-                if (!row.quantity) {
+                if (!row.quantity && row.quantity !== 0) {
                   result.errorID = row.organisation_id;
                   result.errorField = 'quantity';
                   result.errorReason = 'Missing Required Property';
