@@ -19,8 +19,8 @@ var validateInventorySnapshots = function () {
             supplierData = JSON.parse(data);
             result = {};
             finalObject = [];
-            dateRegex = '/^\d{4}-\d{2}-\d{2}$/';
-            timeRegex = '/^\d{2}:\d{2}:\d{2}$/';
+            dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+            timeRegex = /^\d{2}:\d{2}:\d{2}$/;
             request = supplierData.map(function (row) {
               return new Promise(function (resolve, reject) {
 
@@ -77,12 +77,12 @@ var validateInventorySnapshots = function () {
                     result.errorField = 'snapshot_time';
                     result.errorReason = 'Not in correct format of HH:mm:ss';
                     reject(result);
-                  } else {
-                    result.errorID = row.organisation_id;
-                    result.errorField = 'snapshot_time';
-                    result.errorReason = 'Requires a Time';
-                    reject(result);
                   }
+                } else {
+                  result.errorID = row.organisation_id;
+                  result.errorField = 'snapshot_time';
+                  result.errorReason = 'Requires a Time';
+                  reject(result);
                 }
 
                 if (!row.product_id) {
