@@ -50,7 +50,7 @@ var validateFlatHierarchies = function () {
                   reject(result);
                 } else {
 
-                  if (row.hierarchy_key !== 'product' || row.hierarchy_key !== 'organisation' || row.hierarchy_key !== 'customer' || row.hierarchy_key !== 'channel' || row.hierarchy_key !== 'area') {
+                  if (row.hierarchy_key !== 'product' && row.hierarchy_key !== 'organisation' && row.hierarchy_key !== 'customer' && row.hierarchy_key !== 'channel' && row.hierarchy_key !== 'area') {
                     result.errorID = row.entity_id;
                   }
                   result.errorField = 'hierarchy_key';
