@@ -26,8 +26,8 @@
       <file leaf-file-name="visitors.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/validation/visitors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="40" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="648">
+              <caret line="135" column="46" lean-forward="false" selection-start-line="135" selection-start-column="46" selection-end-line="135" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -56,8 +56,8 @@
       <file leaf-file-name="salestransactions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/validation/salestransactions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="202" column="47" lean-forward="true" selection-start-line="202" selection-start-column="47" selection-end-line="202" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -66,8 +66,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="270">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -136,6 +136,7 @@
     <findStrings>
       <find>nan</find>
       <find>!isNaN</find>
+      <find>sales_va</find>
     </findStrings>
     <replaceStrings>
       <replace>isNaN</replace>
@@ -434,7 +435,7 @@
       <workItem from="1514467368824" duration="436000" />
       <workItem from="1514468002080" duration="21000" />
       <workItem from="1515070937997" duration="427000" />
-      <workItem from="1515071758126" duration="9450000" />
+      <workItem from="1515071758126" duration="9693000" />
     </task>
     <task id="LOCAL-00001" summary="Master - added readme">
       <created>1513786027535</created>
@@ -492,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515081877602</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Master - updated salestransactions">
+      <created>1515082242842</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1515082242842</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -528,7 +536,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69029000" />
+    <option name="totallyTimeSpent" value="69272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1078" width="1920" height="1034" extended-state="6" />
@@ -925,14 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/validation/visitors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="15" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/salesorders.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5333">
@@ -967,16 +967,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="270">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/validation/visitors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="135" column="46" lean-forward="false" selection-start-line="135" selection-start-column="46" selection-end-line="135" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/salestransactions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="202" column="47" lean-forward="true" selection-start-line="202" selection-start-column="47" selection-end-line="202" selection-end-column="47" />
           <folding />
         </state>
       </provider>

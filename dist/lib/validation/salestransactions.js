@@ -191,7 +191,7 @@ var validateSalesTransactions = function () {
                   }
                 }
 
-                if (!row.sales_value) {
+                if (!row.sales_value && row.sales_value !== 0) {
                   result.errorID = row.transaction_id;
                   result.errorField = 'sales_value';
                   result.errorReason = 'Missing Required Property';
