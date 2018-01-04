@@ -19,8 +19,8 @@ var validateSalesOrders = function () {
             salesData = JSON.parse(data);
             result = {};
             finalObject = [];
-            dateRegex = '/^\d{4}-\d{2}-\d{2}$/';
-            timeRegex = '/^\d{2}:\d{2}:\d{2}$/';
+            dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+            timeRegex = /^\d{2}:\d{2}:\d{2}$/;
             request = salesData.map(function (row) {
               return new Promise(function (resolve, reject) {
 
@@ -325,12 +325,12 @@ var validateSalesOrders = function () {
                     result.errorField = 'delivery_date';
                     result.errorReason = 'Not in correct format of YYYY-mm-dd';
                     reject(result);
-                  } else {
-                    result.errorID = row.transaction_id;
-                    result.errorField = 'delivery_date';
-                    result.errorReason = 'Requires a Date';
-                    reject(result);
                   }
+                } else {
+                  result.errorID = row.transaction_id;
+                  result.errorField = 'delivery_date';
+                  result.errorReason = 'Requires a Date';
+                  reject(result);
                 }
 
                 if (row.delivery_time) {
@@ -339,12 +339,12 @@ var validateSalesOrders = function () {
                     result.errorField = 'delivery_time';
                     result.errorReason = 'Not in correct format of HH:mm:ss';
                     reject(result);
-                  } else {
-                    result.errorID = row.transaction_id;
-                    result.errorField = 'delivery_time';
-                    result.errorReason = 'Requires a Time';
-                    reject(result);
                   }
+                } else {
+                  result.errorID = row.transaction_id;
+                  result.errorField = 'delivery_time';
+                  result.errorReason = 'Requires a Time';
+                  reject(result);
                 }
 
                 if (row.order_date) {
@@ -353,12 +353,12 @@ var validateSalesOrders = function () {
                     result.errorField = 'order_date';
                     result.errorReason = 'Not in correct format of YYYY-mm-dd';
                     reject(result);
-                  } else {
-                    result.errorID = row.transaction_id;
-                    result.errorField = 'order_date';
-                    result.errorReason = 'Requires a Date';
-                    reject(result);
                   }
+                } else {
+                  result.errorID = row.transaction_id;
+                  result.errorField = 'order_date';
+                  result.errorReason = 'Requires a Date';
+                  reject(result);
                 }
 
                 if (row.order_time) {
@@ -367,12 +367,12 @@ var validateSalesOrders = function () {
                     result.errorField = 'order_time';
                     result.errorReason = 'Not in correct format of HH:mm:ss';
                     reject(result);
-                  } else {
-                    result.errorID = row.transaction_id;
-                    result.errorField = 'order_time';
-                    result.errorReason = 'Requires a Time';
-                    reject(result);
                   }
+                } else {
+                  result.errorID = row.transaction_id;
+                  result.errorField = 'order_time';
+                  result.errorReason = 'Requires a Time';
+                  reject(result);
                 }
 
                 if (row.invoice_date) {
@@ -381,12 +381,12 @@ var validateSalesOrders = function () {
                     result.errorField = 'invoice_date';
                     result.errorReason = 'Not in correct format of YYYY-mm-dd';
                     reject(result);
-                  } else {
-                    result.errorID = row.transaction_id;
-                    result.errorField = 'invoice_date';
-                    result.errorReason = 'Requires a Date';
-                    reject(result);
                   }
+                } else {
+                  result.errorID = row.transaction_id;
+                  result.errorField = 'invoice_date';
+                  result.errorReason = 'Requires a Date';
+                  reject(result);
                 }
 
                 if (row.invoice_time) {
@@ -395,12 +395,12 @@ var validateSalesOrders = function () {
                     result.errorField = 'invoice_time';
                     result.errorReason = 'Not in correct format of HH:mm:ss';
                     reject(result);
-                  } else {
-                    result.errorID = row.invoice_time;
-                    result.errorField = 'order_time';
-                    result.errorReason = 'Requires a Time';
-                    reject(result);
                   }
+                } else {
+                  result.errorID = row.invoice_time;
+                  result.errorField = 'order_time';
+                  result.errorReason = 'Requires a Time';
+                  reject(result);
                 }
 
                 if (row.order_status) {

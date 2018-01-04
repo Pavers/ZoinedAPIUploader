@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1d6a3f55-ef58-42ee-b500-9c79369f1038" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/lib/constants.js" afterPath="$PROJECT_DIR$/dist/lib/constants.js" />
-      <change beforePath="$PROJECT_DIR$/dist/lib/constants.js.map" afterPath="$PROJECT_DIR$/dist/lib/constants.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/lib/validation/salesperson.js" afterPath="$PROJECT_DIR$/dist/lib/validation/salesperson.js" />
-      <change beforePath="$PROJECT_DIR$/dist/lib/validation/salesperson.js.map" afterPath="$PROJECT_DIR$/dist/lib/validation/salesperson.js.map" />
-      <change beforePath="$PROJECT_DIR$/dist/lib/validation/visitors.js" afterPath="$PROJECT_DIR$/dist/lib/validation/visitors.js" />
-      <change beforePath="$PROJECT_DIR$/dist/lib/validation/visitors.js.map" afterPath="$PROJECT_DIR$/dist/lib/validation/visitors.js.map" />
-      <change beforePath="$PROJECT_DIR$/lib/constants.js" afterPath="$PROJECT_DIR$/lib/constants.js" />
-      <change beforePath="$PROJECT_DIR$/lib/validation/salesperson.js" afterPath="$PROJECT_DIR$/lib/validation/salesperson.js" />
-      <change beforePath="$PROJECT_DIR$/lib/validation/visitors.js" afterPath="$PROJECT_DIR$/lib/validation/visitors.js" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/validation/salesorders.js" afterPath="$PROJECT_DIR$/dist/lib/validation/salesorders.js" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/validation/salesorders.js.map" afterPath="$PROJECT_DIR$/dist/lib/validation/salesorders.js.map" />
+      <change beforePath="$PROJECT_DIR$/lib/validation/salesorders.js" afterPath="$PROJECT_DIR$/lib/validation/salesorders.js" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,8 +26,8 @@
       <file leaf-file-name="visitors.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/validation/visitors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="156" column="14" lean-forward="true" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
+            <state relative-caret-position="270">
+              <caret line="15" column="40" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="15" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -72,8 +66,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="378">
+              <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -122,8 +116,8 @@
       <file leaf-file-name="salesorders.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/validation/salesorders.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3042">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="-1003">
+              <caret line="371" column="27" lean-forward="true" selection-start-line="371" selection-start-column="27" selection-end-line="371" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -175,7 +169,6 @@
         <option value="$PROJECT_DIR$/lib/validation/producthierachies.js" />
         <option value="$PROJECT_DIR$/lib/validation/rebatecodes.js" />
         <option value="$PROJECT_DIR$/lib/validation/flathierarchies.js" />
-        <option value="$PROJECT_DIR$/lib/validation/salesorders.js" />
         <option value="$PROJECT_DIR$/lib/validation/salessummary.js" />
         <option value="$PROJECT_DIR$/lib/validation/campaigns.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -188,6 +181,7 @@
         <option value="$PROJECT_DIR$/lib/validation/visitors.js" />
         <option value="$PROJECT_DIR$/lib/validation/salesperson.js" />
         <option value="$PROJECT_DIR$/lib/constants.js" />
+        <option value="$PROJECT_DIR$/lib/validation/salesorders.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -213,9 +207,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-2" />
+    <option name="y" value="1078" />
     <option name="width" value="1920" />
-    <option name="height" value="1082" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -439,7 +433,7 @@
       <workItem from="1514467368824" duration="436000" />
       <workItem from="1514468002080" duration="21000" />
       <workItem from="1515070937997" duration="427000" />
-      <workItem from="1515071758126" duration="8255000" />
+      <workItem from="1515071758126" duration="8574000" />
     </task>
     <task id="LOCAL-00001" summary="Master - added readme">
       <created>1513786027535</created>
@@ -476,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515078086416</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Master - fixed isNaN error">
+      <created>1515081046023</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1515081046023</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -512,10 +513,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67834000" />
+    <option name="totallyTimeSpent" value="68153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
+    <frame x="0" y="1078" width="1920" height="1034" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2484375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -891,14 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/validation/salesorders.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3042">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/salestransactions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -931,14 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/validation/visitors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="156" column="14" lean-forward="true" selection-start-line="156" selection-start-column="14" selection-end-line="156" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/salesperson.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -955,10 +940,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/validation/visitors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="40" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="15" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/validation/salesorders.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1003">
+          <caret line="371" column="27" lean-forward="true" selection-start-line="371" selection-start-column="27" selection-end-line="371" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="378">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding />
         </state>
       </provider>
