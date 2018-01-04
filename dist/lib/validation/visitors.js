@@ -19,8 +19,8 @@ var validateVisitors = function () {
             supplierData = JSON.parse(data);
             result = {};
             finalObject = [];
-            dateRegex = '/^\d{4}-\d{2}-\d{2}$/';
-            timeRegex = '/^\d{2}:\d{2}:\d{2}$/';
+            dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+            timeRegex = /^\d{2}:\d{2}:\d{2}$/;
             request = supplierData.map(function (row) {
               return new Promise(function (resolve, reject) {
 
