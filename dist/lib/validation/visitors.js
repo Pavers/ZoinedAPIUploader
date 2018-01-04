@@ -133,16 +133,15 @@ var validateVisitors = function () {
                     reject(result);
                   }
                 } else {
-                  row.vehicle_type = '';
+                  row.vehicle_type = 'car';
                 }
 
-                if (!row.visitors) {
+                if (!row.visitors && row.visitors !== 0) {
                   result.errorID = row.organisation_id;
                   result.errorField = 'visitors';
                   result.errorReason = 'Missing Required Property';
                   reject(result);
                 } else {
-
                   if (isNaN(row.visitors)) {
                     result.errorID = row.organisation_id;
                     result.errorField = 'visitors';

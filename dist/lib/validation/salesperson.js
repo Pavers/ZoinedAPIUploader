@@ -91,8 +91,6 @@ var validateSalesPerson = function () {
                     result.errorReason = 'Not a String';
                     reject(result);
                   }
-                } else {
-                  row.employee_id = '';
                 }
 
                 if (row.source_system) {

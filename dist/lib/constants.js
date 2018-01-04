@@ -10,7 +10,7 @@ module.exports = Object.freeze({
   PRODUCTS: 'products',
   CUSTOMERS: 'customers',
   ORGANISATIONS: 'organisations',
-  SALESPERSON: 'salesperson',
+  SALESPERSON: 'salespersons',
   CURRENCYRATES: 'currencyrates',
   INVENTORYSNAPSHOTS: 'inventorysnapshots',
   INVENTORYTRANSACTIONS: 'inventorytransactions',
