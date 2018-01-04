@@ -61,7 +61,7 @@ var validateDepartment = function () {
                 }
 
                 if (row.floor_area) {
-                  if (!isNaN(row.floor_area)) {
+                  if (isNaN(row.floor_area)) {
                     result.errorID = row.department_id;
                     result.errorField = 'floor_area';
                     result.errorReason = 'Not a Number!';

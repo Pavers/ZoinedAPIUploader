@@ -110,7 +110,7 @@ var validateProducts = function () {
                 }
 
                 if (row.purchase_price) {
-                  if (!isNaN(row.purchase_price)) {
+                  if (isNaN(row.purchase_price)) {
                     result.errorID = row.product_id;
                     result.errorField = 'purchase_price';
                     result.errorReason = 'Not a Number!';
@@ -121,7 +121,7 @@ var validateProducts = function () {
                 }
 
                 if (row.vat_rate) {
-                  if (!isNaN(row.vat_rate)) {
+                  if (isNaN(row.vat_rate)) {
                     result.errorID = row.product_id;
                     result.errorField = 'vat_rate';
                     result.errorReason = 'Not a Number!';
@@ -231,7 +231,7 @@ var validateProducts = function () {
                 }
 
                 if (row.freight) {
-                  if (!isNaN(row.freight)) {
+                  if (isNaN(row.freight)) {
                     result.errorID = row.product_id;
                     result.errorField = 'freight';
                     result.errorReason = 'Not a Number!';
@@ -242,7 +242,7 @@ var validateProducts = function () {
                 }
 
                 if (row.duty) {
-                  if (!isNaN(row.duty)) {
+                  if (isNaN(row.duty)) {
                     result.errorID = row.product_id;
                     result.errorField = 'duty';
                     result.errorReason = 'Not a Number!';

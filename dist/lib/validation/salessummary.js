@@ -113,7 +113,7 @@ var validateSalesSummary = function () {
                 }
 
                 if (row.sales_value) {
-                  if (!isNaN(row.sales_value)) {
+                  if (isNaN(row.sales_value)) {
                     result.errorID = row.sales_date + ' ' + row.sales_time;
                     result.errorField = 'sales_value';
                     result.errorReason = 'Not a Number!';
@@ -124,7 +124,7 @@ var validateSalesSummary = function () {
                 }
 
                 if (row.sales_value_wo_vat) {
-                  if (!isNaN(row.sales_value_wo_vat)) {
+                  if (isNaN(row.sales_value_wo_vat)) {
                     result.errorID = row.sales_date + ' ' + row.sales_time;
                     result.errorField = 'sales_value_wo_vat';
                     result.errorReason = 'Not a Number!';
@@ -146,7 +146,7 @@ var validateSalesSummary = function () {
                 }
 
                 if (row.rebate) {
-                  if (!isNaN(row.rebate)) {
+                  if (isNaN(row.rebate)) {
                     result.errorID = row.sales_date + ' ' + row.sales_time;
                     result.errorField = 'rebate';
                     result.errorReason = 'Not a Number!';
@@ -157,7 +157,7 @@ var validateSalesSummary = function () {
                 }
 
                 if (row.rebate_wo_vat) {
-                  if (!isNaN(row.rebate_wo_vat)) {
+                  if (isNaN(row.rebate_wo_vat)) {
                     result.errorID = row.sales_date + ' ' + row.sales_time;
                     result.errorField = 'rebate_wo_vat';
                     result.errorReason = 'Not a Number!';
@@ -168,7 +168,7 @@ var validateSalesSummary = function () {
                 }
 
                 if (row.purchase_price) {
-                  if (!isNaN(row.purchase_price)) {
+                  if (isNaN(row.purchase_price)) {
                     result.errorID = row.sales_date + ' ' + row.sales_time;
                     result.errorField = 'purchase_price';
                     result.errorReason = 'Not a Number!';
@@ -179,7 +179,7 @@ var validateSalesSummary = function () {
                 }
 
                 if (row.purchase_price_wo_vat) {
-                  if (!isNaN(row.purchase_price_wo_vat)) {
+                  if (isNaN(row.purchase_price_wo_vat)) {
                     result.errorID = row.sales_date + ' ' + row.sales_time;
                     result.errorField = 'purchase_price_wo_vat';
                     result.errorReason = 'Not a Number!';
@@ -201,7 +201,7 @@ var validateSalesSummary = function () {
                 }
 
                 if (row.product_quantity) {
-                  if (!isNaN(row.product_quantity)) {
+                  if (isNaN(row.product_quantity)) {
                     result.errorID = row.sales_date + ' ' + row.sales_time;
                     result.errorField = 'product_quantity';
                     result.errorReason = 'Not a Number!';
@@ -212,7 +212,7 @@ var validateSalesSummary = function () {
                 }
 
                 if (row.number_of_transactions) {
-                  if (!isNaN(row.number_of_transactions)) {
+                  if (isNaN(row.number_of_transactions)) {
                     result.errorID = row.sales_date + ' ' + row.sales_time;
                     result.errorField = 'number_of_transactions';
                     result.errorReason = 'Not a Number!';

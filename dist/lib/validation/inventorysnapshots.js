@@ -107,7 +107,7 @@ var validateInventorySnapshots = function () {
                   reject(result);
                 } else {
 
-                  if (!isNaN(row.quantity)) {
+                  if (isNaN(row.quantity)) {
                     result.errorID = row.organisation_id;
                     result.errorField = 'quantity';
                     result.errorReason = 'Not a Number!';
@@ -116,7 +116,7 @@ var validateInventorySnapshots = function () {
                 }
 
                 if (row.unit_purchase_price) {
-                  if (!isNaN(row.unit_purchase_price)) {
+                  if (isNaN(row.unit_purchase_price)) {
                     result.errorID = row.organisation_id;
                     result.errorField = 'unit_purchase_price';
                     result.errorReason = 'Not a Number!';
@@ -127,7 +127,7 @@ var validateInventorySnapshots = function () {
                 }
 
                 if (row.unit_purchase_price_wo_vat) {
-                  if (!isNaN(row.unit_purchase_price_wo_vat)) {
+                  if (isNaN(row.unit_purchase_price_wo_vat)) {
                     result.errorID = row.organisation_id;
                     result.errorField = 'unit_purchase_price_wo_vat';
                     result.errorReason = 'Not a Number!';

@@ -142,7 +142,7 @@ var validateVisitors = function () {
                   reject(result);
                 } else {
 
-                  if (!isNaN(row.visitors)) {
+                  if (isNaN(row.visitors)) {
                     result.errorID = row.organisation_id;
                     result.errorField = 'visitors';
                     result.errorReason = 'Not a Number!';

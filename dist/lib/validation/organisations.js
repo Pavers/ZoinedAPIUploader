@@ -141,7 +141,7 @@ var validateOrganisations = function () {
                 }
 
                 if (row.latitude) {
-                  if (!isNaN(row.latitude)) {
+                  if (isNaN(row.latitude)) {
                     result.errorID = row.organisation_id;
                     result.errorField = 'latitude';
                     result.errorReason = 'Not a Number!';
@@ -152,7 +152,7 @@ var validateOrganisations = function () {
                 }
 
                 if (row.longitude) {
-                  if (!isNaN(row.longitude)) {
+                  if (isNaN(row.longitude)) {
                     result.errorID = row.organisation_id;
                     result.errorField = 'longitude';
                     result.errorReason = 'Not a Number!';

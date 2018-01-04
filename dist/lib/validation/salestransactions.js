@@ -168,7 +168,7 @@ var validateSalesTransactions = function () {
                   reject(result);
                 } else {
 
-                  if (!isNaN(row.product_quantity)) {
+                  if (isNaN(row.product_quantity)) {
                     result.errorID = row.transaction_id;
                     result.errorField = 'product_id';
                     result.errorReason = 'Not a Number!';
@@ -183,7 +183,7 @@ var validateSalesTransactions = function () {
                   reject(result);
                 } else {
 
-                  if (!isNaN(row.product_unit_price)) {
+                  if (isNaN(row.product_unit_price)) {
                     result.errorID = row.transaction_id;
                     result.errorField = 'product_unit_price';
                     result.errorReason = 'Not a Number!';
@@ -198,7 +198,7 @@ var validateSalesTransactions = function () {
                   reject(result);
                 } else {
 
-                  if (!isNaN(row.sales_value)) {
+                  if (isNaN(row.sales_value)) {
                     result.errorID = row.transaction_id;
                     result.errorField = 'sales_value';
                     result.errorReason = 'Not a Number!';
@@ -207,7 +207,7 @@ var validateSalesTransactions = function () {
                 }
 
                 if (row.sales_value_wo_vat) {
-                  if (!isNaN(row.sales_value_wo_vat)) {
+                  if (isNaN(row.sales_value_wo_vat)) {
                     result.errorID = row.transaction_id;
                     result.errorField = 'sales_value_wo_vat';
                     result.errorReason = 'Not a Number!';
@@ -218,7 +218,7 @@ var validateSalesTransactions = function () {
                 }
 
                 if (row.rebate) {
-                  if (!isNaN(row.rebate)) {
+                  if (isNaN(row.rebate)) {
                     result.errorID = row.transaction_id;
                     result.errorField = 'rebate';
                     result.errorReason = 'Not a Number!';
@@ -229,7 +229,7 @@ var validateSalesTransactions = function () {
                 }
 
                 if (row.rebate_wo_vat) {
-                  if (!isNaN(row.rebate_wo_vat)) {
+                  if (isNaN(row.rebate_wo_vat)) {
                     result.errorID = row.transaction_id;
                     result.errorField = 'rebate_wo_vat';
                     result.errorReason = 'Not a Number!';
@@ -273,7 +273,7 @@ var validateSalesTransactions = function () {
                 }
 
                 if (row.purchase_price) {
-                  if (!isNaN(row.purchase_price)) {
+                  if (isNaN(row.purchase_price)) {
                     result.errorID = row.transaction_id;
                     result.errorField = 'purchase_price';
                     result.errorReason = 'Not a Number!';
@@ -284,7 +284,7 @@ var validateSalesTransactions = function () {
                 }
 
                 if (row.purchase_price_wo_vat) {
-                  if (!isNaN(row.purchase_price_wo_vat)) {
+                  if (isNaN(row.purchase_price_wo_vat)) {
                     result.errorID = row.transaction_id;
                     result.errorField = 'purchase_price_wo_vat';
                     result.errorReason = 'Not a Number!';

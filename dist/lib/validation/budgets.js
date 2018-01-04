@@ -40,7 +40,7 @@ var validateBudgets = function () {
                   result.errorReason = 'Missing Required Property';
                   reject(result);
                 } else {
-                  if (!isNaN(row.year)) {
+                  if (isNaN(row.year)) {
                     result.errorID = '';
                     result.errorField = 'year';
                     result.errorReason = 'Not a Number!';
@@ -54,7 +54,7 @@ var validateBudgets = function () {
                   result.errorReason = 'Missing Required Property';
                   reject(result);
                 } else {
-                  if (!isNaN(row.month)) {
+                  if (isNaN(row.month)) {
                     result.errorID = '';
                     result.errorField = 'month';
                     result.errorReason = 'Not a Number!';
@@ -63,7 +63,7 @@ var validateBudgets = function () {
                 }
 
                 if (row.day) {
-                  if (!isNaN(row.day)) {
+                  if (isNaN(row.day)) {
                     result.errorID = row.year + ' ' + row.month;
                     result.errorField = 'day';
                     result.errorReason = 'Not a Number!';
@@ -74,7 +74,7 @@ var validateBudgets = function () {
                 }
 
                 if (row.hour) {
-                  if (!isNaN(row.hour)) {
+                  if (isNaN(row.hour)) {
                     result.errorID = row.year + ' ' + row.month;
                     result.errorField = 'hour';
                     result.errorReason = 'Not a Number!';

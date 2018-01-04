@@ -108,7 +108,7 @@ var currencyValidation = function () {
                   reject(result);
                 } else {
 
-                  if (!isNaN(row.rate)) {
+                  if (isNaN(row.rate)) {
                     result.errorID = row.source_currency;
                     result.errorField = 'rate';
                     result.errorReason = 'Not a Number!';
