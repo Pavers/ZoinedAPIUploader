@@ -176,7 +176,7 @@ var validateSalesTransactions = function () {
                   }
                 }
 
-                if (!row.product_unit_price) {
+                if (!row.product_unit_price && row.product_unit_price !== 0) {
                   result.errorID = row.transaction_id;
                   result.errorField = 'product_unit_price';
                   result.errorReason = 'Missing Required Property';

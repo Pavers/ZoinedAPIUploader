@@ -53,21 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="salestransactions.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="salestransactions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/validation/salestransactions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="202" column="47" lean-forward="true" selection-start-line="202" selection-start-column="47" selection-end-line="202" selection-end-column="47" />
+            <state relative-caret-position="388">
+              <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="306">
+              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -137,6 +137,7 @@
       <find>nan</find>
       <find>!isNaN</find>
       <find>sales_va</find>
+      <find>product_un</find>
     </findStrings>
     <replaceStrings>
       <replace>isNaN</replace>
@@ -145,6 +146,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="dave &lt;dave.grix@pavers.co.uk&gt;" />
         <option value="dave" />
         <option value="dave.grix@pavers.co.uk" />
       </list>
@@ -182,8 +184,8 @@
         <option value="$PROJECT_DIR$/lib/validation/salesperson.js" />
         <option value="$PROJECT_DIR$/lib/constants.js" />
         <option value="$PROJECT_DIR$/lib/validation/salesorders.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/lib/validation/salestransactions.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -435,7 +437,7 @@
       <workItem from="1514467368824" duration="436000" />
       <workItem from="1514468002080" duration="21000" />
       <workItem from="1515070937997" duration="427000" />
-      <workItem from="1515071758126" duration="9693000" />
+      <workItem from="1515071758126" duration="9892000" />
     </task>
     <task id="LOCAL-00001" summary="Master - added readme">
       <created>1513786027535</created>
@@ -500,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515082242842</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Master - updated salestransactions">
+      <created>1515082486520</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1515082486520</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -536,7 +545,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69272000" />
+    <option name="totallyTimeSpent" value="69471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1078" width="1920" height="1034" extended-state="6" />
@@ -965,14 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/visitors.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -983,8 +984,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/salestransactions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="202" column="47" lean-forward="true" selection-start-line="202" selection-start-column="47" selection-end-line="202" selection-end-column="47" />
+        <state relative-caret-position="388">
+          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
           <folding />
         </state>
       </provider>
