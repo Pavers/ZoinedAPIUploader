@@ -35,11 +35,11 @@ var validateFlatHierarchies = function () {
                  * @param row object
                  * @param row.hierarchy_key string required (see required key)
                  * @param row.entity_id string required
-                 * @param row.level_1 string required
-                 * @param row.level_2 string
-                 * @param row.level_3 string
-                 * @param row.level_4 string
-                 * @param row.level_5 string
+                 * @param row.level1 string required
+                 * @param row.level2 string
+                 * @param row.level3 string
+                 * @param row.level4 string
+                 * @param row.level5 string
                  * @param row.source_system string
                  */
 
@@ -58,67 +58,67 @@ var validateFlatHierarchies = function () {
                   reject(result);
                 }
 
-                if (!row.level_1) {
+                if (!row.level1) {
                   result.errorID = row.entity_id;
-                  result.errorField = 'level_1';
+                  result.errorField = 'level1';
                   result.errorReason = 'Missing Required Property';
                   reject(result);
                 } else {
 
-                  if (typeof row.level_1 !== 'string') {
+                  if (typeof row.level1 !== 'string') {
                     result.errorID = row.entity_id;
-                    result.errorField = 'level_1';
+                    result.errorField = 'level1';
                     result.errorReason = 'Not a String';
                     reject(result);
                   }
                 }
 
-                if (row.level_2) {
-                  if (typeof row.level_2 !== 'string') {
+                if (row.level2) {
+                  if (typeof row.level2 !== 'string') {
                     result.errorID = row.entity_id;
-                    result.errorField = 'level_2';
+                    result.errorField = 'level2';
                     result.errorReason = 'Not a String';
                     reject(result);
                   }
                 } else {
-                  row.level_2 = '';
+                  row.level2 = '';
                 }
 
-                if (row.level_3) {
-                  if (typeof row.level_3 !== 'string') {
+                if (row.level3) {
+                  if (typeof row.level3 !== 'string') {
                     result.errorID = row.entity_id;
-                    result.errorField = 'level_3';
+                    result.errorField = 'level3';
                     result.errorReason = 'Not a String';
                     reject(result);
                   }
                 } else {
-                  row.level_3 = '';
+                  row.level3 = '';
                 }
 
-                if (row.level_4) {
-                  if (typeof row.level_4 !== 'string') {
+                if (row.level4) {
+                  if (typeof row.level4 !== 'string') {
                     result.errorID = row.entity_id;
-                    result.errorField = 'level_4';
+                    result.errorField = 'level4';
                     result.errorReason = 'Not a String';
                     reject(result);
                   }
                 } else {
-                  row.level_4 = '';
+                  row.level4 = '';
                 }
 
-                if (row.level_5) {
-                  if (typeof row.level_5 !== 'string') {
+                if (row.level5) {
+                  if (typeof row.level5 !== 'string') {
                     result.errorID = row.entity_id;
-                    result.errorField = 'level_5';
+                    result.errorField = 'level5';
                     result.errorReason = 'Not a String';
                     reject(result);
                   }
                 } else {
-                  row.level_5 = '';
+                  row.level5 = '';
                 }
 
                 if (row.source_system) {
-                  if (typeof row.level_5 !== 'string') {
+                  if (typeof row.level5 !== 'string') {
                     result.errorID = row.entity_id;
                     result.errorField = 'source_system';
                     result.errorReason = 'Not a String';

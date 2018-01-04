@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1d6a3f55-ef58-42ee-b500-9c79369f1038" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/validation/flathierarchies.js" afterPath="$PROJECT_DIR$/dist/lib/validation/flathierarchies.js" />
+      <change beforePath="$PROJECT_DIR$/dist/lib/validation/flathierarchies.js.map" afterPath="$PROJECT_DIR$/dist/lib/validation/flathierarchies.js.map" />
       <change beforePath="$PROJECT_DIR$/dist/lib/validation/salestransactions.js" afterPath="$PROJECT_DIR$/dist/lib/validation/salestransactions.js" />
       <change beforePath="$PROJECT_DIR$/dist/lib/validation/salestransactions.js.map" afterPath="$PROJECT_DIR$/dist/lib/validation/salestransactions.js.map" />
+      <change beforePath="$PROJECT_DIR$/lib/validation/flathierarchies.js" afterPath="$PROJECT_DIR$/lib/validation/flathierarchies.js" />
       <change beforePath="$PROJECT_DIR$/lib/validation/salestransactions.js" afterPath="$PROJECT_DIR$/lib/validation/salestransactions.js" />
       <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
@@ -56,8 +59,18 @@
       <file leaf-file-name="salestransactions.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/validation/salestransactions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+            <state relative-caret-position="3114">
+              <caret line="173" column="25" lean-forward="true" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flathierarchies.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/validation/flathierarchies.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="96" column="23" lean-forward="true" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -66,8 +79,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state relative-caret-position="252">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -88,16 +101,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
               <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="products.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/validation/products.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2106">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="107" selection-start-column="5" selection-end-line="117" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,9 +141,12 @@
       <find>!isNaN</find>
       <find>sales_va</find>
       <find>product_un</find>
+      <find>product_q</find>
+      <find>level_</find>
     </findStrings>
     <replaceStrings>
       <replace>isNaN</replace>
+      <replace>level</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -170,7 +176,6 @@
         <option value="$PROJECT_DIR$/lib/validation/inventorysnapshots.js" />
         <option value="$PROJECT_DIR$/lib/validation/producthierachies.js" />
         <option value="$PROJECT_DIR$/lib/validation/rebatecodes.js" />
-        <option value="$PROJECT_DIR$/lib/validation/flathierarchies.js" />
         <option value="$PROJECT_DIR$/lib/validation/salessummary.js" />
         <option value="$PROJECT_DIR$/lib/validation/campaigns.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -185,6 +190,7 @@
         <option value="$PROJECT_DIR$/lib/constants.js" />
         <option value="$PROJECT_DIR$/lib/validation/salesorders.js" />
         <option value="$PROJECT_DIR$/lib/validation/salestransactions.js" />
+        <option value="$PROJECT_DIR$/lib/validation/flathierarchies.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -437,7 +443,7 @@
       <workItem from="1514467368824" duration="436000" />
       <workItem from="1514468002080" duration="21000" />
       <workItem from="1515070937997" duration="427000" />
-      <workItem from="1515071758126" duration="9892000" />
+      <workItem from="1515071758126" duration="11462000" />
     </task>
     <task id="LOCAL-00001" summary="Master - added readme">
       <created>1513786027535</created>
@@ -509,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515082486520</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Master - updated salestransactions">
+      <created>1515082682319</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1515082682319</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -545,7 +558,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69471000" />
+    <option name="totallyTimeSpent" value="71041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1078" width="1920" height="1034" extended-state="6" />
@@ -862,14 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/validation/flathierarchies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/idmapping.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -934,14 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/validation/salesperson.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/salesorders.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5333">
@@ -982,18 +979,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/validation/salesperson.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="85" column="25" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/validation/salestransactions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+        <state relative-caret-position="3114">
+          <caret line="173" column="25" lean-forward="true" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/validation/flathierarchies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="96" column="23" lean-forward="true" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        <state relative-caret-position="252">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
       </provider>
