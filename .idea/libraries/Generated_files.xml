@@ -19,6 +19,7 @@
         <item url="file://$PROJECT_DIR$/dist/lib/validation/producthierachies.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/products.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/rebatecodes.js" />
+        <item url="file://$PROJECT_DIR$/dist/lib/validation/salesbudgets.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/salesorders.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/salesperson.js" />
         <item url="file://$PROJECT_DIR$/dist/lib/validation/salessummary.js" />
@@ -48,6 +49,7 @@
       <root url="file://$PROJECT_DIR$/dist/lib/validation/producthierachies.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/products.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/rebatecodes.js" />
+      <root url="file://$PROJECT_DIR$/dist/lib/validation/salesbudgets.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/salesorders.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/salesperson.js" />
       <root url="file://$PROJECT_DIR$/dist/lib/validation/salessummary.js" />

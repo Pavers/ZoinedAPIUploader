@@ -133,7 +133,7 @@ var validateVisitors = function () {
                     reject(result);
                   }
                 } else {
-                  row.vehicle_type = 'car';
+                  row.vehicle_type = null;
                 }
 
                 if (!row.visitors && row.visitors !== 0) {

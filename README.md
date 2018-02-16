@@ -43,7 +43,7 @@ zoinedAPI.dataPost(JSON.stringify(myData), 'dataType')
 - campaigns
 - campaignproducts
 - departments
-- budgets
+- salesbudgets { requires year,month,day,store,sales }
 - products
 - customers
 - organisations

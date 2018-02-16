@@ -21,7 +21,8 @@ module.exports = Object.freeze({
   SALESSUMMARY: 'salessummary',
   VISITORS: 'visitors',
   VISTORDEMOGRAPHICS: 'visitordemographics',
-  IDMAPPING: 'idmapping'
+  IDMAPPING: 'idmapping',
+  SALESBUDGETS: 'salesbudgets'
 
 });
 //# sourceMappingURL=constants.js.map
