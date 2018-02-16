@@ -99,7 +99,7 @@ var postData = function () {
             return _context.abrupt('break', 46);
 
           case 44:
-            uri += 'budgets?dryRun=false';
+            uri += 'budgets/budget?dryRun=false';
             return _context.abrupt('break', 46);
 
           case 46:
