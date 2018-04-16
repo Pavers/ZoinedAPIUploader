@@ -1,7 +1,7 @@
 {
   "name": "zoined_api",
-  "version": "1.1.0",
-  "description": "Allows easy validation and posting to the [Zoined](https://www.zoined.com/) api. Each line is validated against the api docs and returns an error with the cause and position if fails. If a null value is sent for a non required field then a default is used.",
+  "version": "1.1.6",
+  "description": "Handles posting data to zoined api, with validation",
   "main": "app.js",
   "scripts": {
     "test": "nyc --reporter=lcov --report-dir=public/coverage  mocha",

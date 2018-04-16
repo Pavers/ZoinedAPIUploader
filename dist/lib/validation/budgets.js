@@ -7,9 +7,11 @@
  * @return array
  */
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-var validateSalesBudgets = function () {
+var validateBudgets = function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(data) {
     var supplierData, result, finalObject, request;
     return regeneratorRuntime.wrap(function _callee$(_context) {
@@ -28,8 +30,8 @@ var validateSalesBudgets = function () {
                    * @param row.month number required
                    * @param row.day number
                    * @param row.hour number
-                   * @param row.organisation_id string required
-                   * @param row.sales number required
+                   * @param row.dimensions object
+                   * @param row.metrics object
                    */
 
                 if (!row.year) {
@@ -82,32 +84,26 @@ var validateSalesBudgets = function () {
                   row.hour = 0;
                 }
 
-                if (!row.organisation_id) {
-                  result.errorID = '';
-                  result.errorField = 'organisation_id';
-                  result.errorReason = 'Missing Required Property';
-                  reject(result);
-                } else {
-                  if (typeof row.organisation_id !== 'string') {
-                    result.errorID = '';
-                    result.errorField = 'organisation_id';
+                if (row.dimensions) {
+                  if (_typeof(row.dimensions) !== 'object') {
+                    result.errorID = row.year + ' ' + row.month;
+                    result.errorField = 'dimensions';
                     result.errorReason = 'Not a String';
                     reject(result);
                   }
+                } else {
+                  row.dimensions = {};
                 }
 
-                if (!row.sales) {
-                  result.errorID = '';
-                  result.errorField = 'sales';
-                  result.errorReason = 'Missing Required Property';
-                  reject(result);
-                } else {
-                  if (isNaN(row.sales)) {
-                    result.errorID = '';
-                    result.errorField = 'sales';
-                    result.errorReason = 'Not a Number!';
+                if (row.metrics) {
+                  if (_typeof(row.metrics) !== 'object') {
+                    result.errorID = row.year + ' ' + row.month;
+                    result.errorField = 'metrics';
+                    result.errorReason = 'Not a String';
                     reject(result);
                   }
+                } else {
+                  row.metrics = {};
                 }
 
                 finalObject.push(row);
@@ -128,12 +124,12 @@ var validateSalesBudgets = function () {
     }, _callee, undefined);
   }));
 
-  return function validateSalesBudgets(_x) {
+  return function validateBudgets(_x) {
     return _ref.apply(this, arguments);
   };
 }();
 
 module.exports = {
-  validateSalesBudgets: validateSalesBudgets
+  validateBudgets: validateBudgets
 };
-//# sourceMappingURL=salesbudgets.js.map
+//# sourceMappingURL=budgets.js.map
