@@ -1,6 +1,6 @@
 {
   "name": "zoined_api",
-  "version": "1.1.6",
+  "version": "1.1.15",
   "description": "Handles posting data to zoined api, with validation",
   "main": "app.js",
   "scripts": {
